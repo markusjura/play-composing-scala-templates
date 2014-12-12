@@ -1,0 +1,16 @@
+@()
+
+@scripts = {
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" type="text/javascript"></script>
+}
+
+@headAdditions = {
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+}
+
+@main(title = "Additional Scripts", headAdditions = headAdditions, scripts = scripts) {
+  <h1>On this page bootstrap is used</h1>
+
+  <a href="@routes.Application.index()">Page: No Additional Scripts</a>
+}
